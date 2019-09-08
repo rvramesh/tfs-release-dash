@@ -52,7 +52,6 @@
     "DEV": [{
             "name": "Eclair",
             "calories": 262,
-            16.0,
             "fat": 24,
             "carbs": 6.0,
             "protein": 3,
@@ -73,7 +72,7 @@
             "carbs": 24,
             "protein": 6.0,
             "rank": 11
-        },
+        }
     ],
     "PROD": [{
             "name": "Cupcake",
