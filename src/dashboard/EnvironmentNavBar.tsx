@@ -1,8 +1,6 @@
 import React from "react";
 import { Button, makeStyles, Theme, createStyles } from "@material-ui/core";
 
-import Divider from "@material-ui/core/Divider";
-
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     button: {
@@ -18,7 +16,7 @@ const EnvironmentNavBar: React.FC<{
 }> = ({ environments, selectedEnvironment, onEnvironmentClick }) => {
   const classes = useStyles();
   return (
-    <React.Fragment>
+    <div>
       {environments.map(env => {
         return (
           <Button
@@ -31,8 +29,7 @@ const EnvironmentNavBar: React.FC<{
           </Button>
         );
       })}
-      <Divider />
-    </React.Fragment>
+    </div>
   );
 };
 

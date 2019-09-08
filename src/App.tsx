@@ -1,15 +1,12 @@
 import React from "react";
 import "./App.css";
 //https://github.com/mui-org/material-ui/issues/15528#issuecomment-487849529
-import {
-  makeStyles,
-  createStyles} from "@material-ui/core/styles";
+import { makeStyles, createStyles } from "@material-ui/core/styles";
 import {
   CssBaseline,
   AppBar,
   Toolbar,
   Typography,
-  Container,
   Theme
 } from "@material-ui/core";
 import DashBoard from "./dashboard/DashBoard";
@@ -53,9 +50,7 @@ const App: React.FC = () => {
         </Toolbar>
       </AppBar>
 
-      <Container maxWidth="lg">
-        <DashBoard></DashBoard>
-      </Container>
+      <DashBoard></DashBoard>
     </div>
   );
 };
